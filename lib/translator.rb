@@ -51,7 +51,7 @@ def get_japanese_emoticon(file, emoticon)
       japanese_emoticon = value[:japanese]
     end
     else
-      japanese_emoticon = apology
+      apology
     end
   end
   japanese_emoticon
