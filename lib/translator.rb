@@ -50,7 +50,6 @@ def get_japanese_emoticon(file, emoticon)
     lang_hash.each do |lang_key, lang_emoti|
       # binding.pry
       if emoticon == lang_emoti
-        binding.pry
         japanese_emoticon = lang_hash[:japanese][lang_emoti]
         # binding.pry
       end
