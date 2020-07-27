@@ -83,5 +83,5 @@ end
 # end
 
 # hash = { first: { second: { third: 'value' } } }
-
+# hash[:first][:second][:third] #=> 'value'
   
