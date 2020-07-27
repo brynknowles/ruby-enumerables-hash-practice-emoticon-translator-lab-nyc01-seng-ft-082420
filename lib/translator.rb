@@ -40,3 +40,21 @@ def get_english_meaning(file, emoticon)
   # binding.pry
 end
 
+def get_japanese_emoticon(file, emoticon)
+  japanese_emoticon = ""
+  apology = "Sorry, that emoticon was not found"
+  library = load_library(file)
+  # binding.pry
+  library.each do |key, value|
+    # binding.pry
+    if emoticon == value[:english]
+      japanese_emoticon = value[:japanese]
+    end
+    if japanese_emoticon == ""
+      japanese_emoticon = apology
+    end
+    # binding.pry
+  end
+  japanese_emoticon
+  # binding.pry
+end
