@@ -57,9 +57,9 @@ def get_japanese_emoticon(file, emoticon)
       #   japanese_emoticon = lang_hash[lang_key][1]
       # end
       # binding.pry
-      # if emoticon == ""
-      #   japanese_emoticon = apology
-      # end
+      if emoticon == ""
+        japanese_emoticon = apology
+      end
     end
   end
   japanese_emoticon
