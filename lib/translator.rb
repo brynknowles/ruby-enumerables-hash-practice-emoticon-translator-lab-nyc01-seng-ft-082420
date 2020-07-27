@@ -49,6 +49,7 @@ def get_japanese_emoticon(file, emoticon)
     # binding.pry
     lang_hash.each do |lang_key, lang_emoti|
       # binding.pry
+      lang_key = :english
       if emoticon == lang_hash[lang_key][lang_emoti]
         japanese_emoticon = lang_hash[lang_key][1]
       end
@@ -61,6 +62,9 @@ def get_japanese_emoticon(file, emoticon)
   japanese_emoticon
   # binding.pry
 end
+
+# hash = { first: { second: { third: 'value' } } }
+# hash[:first][:second][:third] #=> 'value'
 
 # key = hash.keys[0]
 # value = hash.values[0]
@@ -82,6 +86,4 @@ end
 #     return english_emote
 # end
 
-# hash = { first: { second: { third: 'value' } } }
-# hash[:first][:second][:third] #=> 'value'
   
