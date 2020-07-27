@@ -45,16 +45,13 @@ def get_japanese_emoticon(file, emoticon)
   apology = "Sorry, that emoticon was not found"
   library = load_library(file)
   # binding.pry
-  library.each do |emo_meaning, lang_hash |
+  library.each do |emo_meaning, lang_hash|
     # binding.pry
-    lang_hash.each do |lang_key, lang_emoti|
-      # binding.pry
-      if emoticon == lang_hash[:english][lang_emoti]
-        japanese_emoticon = lang_hash[:japanese][lang_emoti]
-      end
-      if emoticon == ""
-        japanese_emoticon = apology
-      end
+    if emoticon == lang_hash[:english][lang_emoti]
+      japanese_emoticon = lang_hash[:japanese][lang_emoti]
+    end
+    if emoticon == ""
+      japanese_emoticon = apology
     end
   end
   japanese_emoticon
