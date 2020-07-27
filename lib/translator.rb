@@ -65,10 +65,10 @@ end
 # key = hash.keys[0]
 # value = hash.values[0]
 
-# def get_japanese_emoticon(yaml_file, eng_emoti)
+# def get_japanese_emoticon(file, eng_emoti)
 #   # code goes here
 #   translation = ""
-#   new_hash = load_library('./lib/emoticons.yml')
+#   new_hash = load_library(file)
 #   new_hash.each do |name, languages|
 #       eng_emoti == languages[:english]
 #       translation = languages[:japanese]
