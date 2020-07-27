@@ -48,7 +48,7 @@ def get_japanese_emoticon(file, emoticon)
   library.each do |key, value|
     # binding.pry
     if emoticon == value[:english]
-      japanese_emoticon = value[]
+      japanese_emoticon = value[:japanese]
     end
     if emoticon == ""
       japanese_emoticon = apology
