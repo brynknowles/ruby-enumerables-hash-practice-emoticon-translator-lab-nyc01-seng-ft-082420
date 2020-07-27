@@ -49,7 +49,6 @@ def get_japanese_emoticon(file, emoticon)
     # binding.pry
     if emoticon == value[:english]
       japanese_emoticon = value[:japanese]
-    end
     else
       apology
     end
