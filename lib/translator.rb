@@ -51,7 +51,7 @@ def get_japanese_emoticon(file, emoticon)
       # binding.pry
       if emoticon == lang_hash[:english][lang_emoti]
       end
-        binding.pry
+      binding.pry
       # if emoticon == lang_hash[lang_key][lang_emoti]
       #   japanese_emoticon = lang_hash[lang_key][1]
       # end
