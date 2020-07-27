@@ -47,8 +47,8 @@ def get_japanese_emoticon(file, emoticon)
   # binding.pry
   library.each do |key, value|
     # binding.pry
-    if emoticon == lang_hash[:english][lang_emoti]
-      japanese_emoticon = lang_hash[:japanese][lang_emoti]
+    if emoticon == value[:english]
+      japanese_emoticon = value[]
     end
     if emoticon == ""
       japanese_emoticon = apology
