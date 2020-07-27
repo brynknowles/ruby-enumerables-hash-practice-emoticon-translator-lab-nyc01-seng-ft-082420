@@ -51,8 +51,8 @@ def get_japanese_emoticon(file, emoticon)
       # binding.pry
       if emoticon == lang_hash[lang_key][0]
         japanese_emoticon = lang_hash[lang_key][1]
-        binding.pry
       end
+      binding.pry
       if emoticon == ""
         japanese_emoticon = apology
       end
