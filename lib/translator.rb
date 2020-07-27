@@ -51,7 +51,7 @@ def get_japanese_emoticon(file, emoticon)
       japanese_emoticon = value[:japanese]
     end
     if emoticon != value[:english]
-      japanese_emoticon = apology
+      apology
     end
     # binding.pry
   end
