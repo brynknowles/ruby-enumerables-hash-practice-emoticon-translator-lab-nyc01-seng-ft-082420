@@ -40,41 +40,47 @@ def get_english_meaning(file, emoticon)
   # binding.pry
 end
 
-# def get_japanese_emoticon(file, emoticon)
-#   japanese_emoticon = ""
-#   apology = "Sorry, that emoticon was not found"
-#   library = load_library(file)
-#   # binding.pry
-#   library.each do |emo_meaning, lang_hash |
-#     # binding.pry
-#     lang_hash.each do |lang_key, lang_emoti|
-#       # binding.pry
-#       if emoticon == lang_emoti && lang_key == :english
-#         binding.pry
-#         japanese_emoticon = lang_hash[:japanese][lang_emoti]
-#         # binding.pry
-#       end
-#       if emoticon == ""
-#         japanese_emoticon = apology
-#       end
-#     end
-#   end
-#   japanese_emoticon
-#   # binding.pry
-# end
+def get_japanese_emoticon(file, emoticon)
+  japanese_emoticon = ""
+  apology = "Sorry, that emoticon was not found"
+  library = load_library(file)
+  # binding.pry
+  library.each do |emo_meaning, lang_hash |
+    # binding.pry
+    lang_hash.each do |lang_key, lang_emoti|
+      # binding.pry
+      if emoticon == lang_emoti && lang_key == :english
+        binding.pry
+        japanese_emoticon = lang_hash[:japanese][lang_emoti]
+        # binding.pry
+      end
+      if emoticon == ""
+        japanese_emoticon = apology
+      end
+    end
+  end
+  japanese_emoticon
+  # binding.pry
+end
 
 # key = hash.keys[0]
 # value = hash.values[0]
 
-def get_japanese_emoticon(yaml_file, eng_emoti)
-  # code goes here
-  translation = ""
-  new_hash = load_library('./lib/emoticons.yml')
-  new_hash.each do |name, languages|
-      eng_emoti == languages[:english]
-      translation = languages[:japanese]
-      return translation
-    end
-end
+# def get_japanese_emoticon(yaml_file, eng_emoti)
+#   # code goes here
+#   translation = ""
+#   new_hash = load_library('./lib/emoticons.yml')
+#   new_hash.each do |name, languages|
+#       eng_emoti == languages[:english]
+#       translation = languages[:japanese]
+#       return translation
+#     end
+# end
+
+# english_emote = languages[english]
+# japanese_emote = languages[japanese]
+# if japanese_emote == passed_in_emote
+#     return english_emote
+# end
 
   
